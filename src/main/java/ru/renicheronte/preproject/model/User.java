@@ -8,7 +8,6 @@ import java.util.Objects;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private int id;
     @Column(name = "first_name")
     private String firstName;
@@ -16,9 +15,7 @@ public class User {
     private String lastName;
     @Column(name = "year_of_birth")
     private int yearOfBirth;
-    @Column(name = "balance")
     private double balance;
-    @Column(name = "email")
     private String email;
 
     public User() {

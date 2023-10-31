@@ -1,6 +1,5 @@
 package ru.renicheronte.preproject.dao;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import ru.renicheronte.preproject.model.User;
 
@@ -11,7 +10,7 @@ import java.util.List;
 @Repository
 public class UserDaoImp implements UserDao {
     @PersistenceContext
-    EntityManager entityManager;
+    private EntityManager entityManager;
 
     @Override
     public void saveUser(User user) {
